@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1,0">
-    <title>Viva ao vivo</title>
+    <title>Imagens</title>
     <link rel="icon" href="imagens/viva ao vivo ico.webp" type="image/x-icon">
         <link rel="icon" href="imagens/viva ao vivo ico.webp" sizes="16x16" />
         <link rel="icon" href="imagens/viva ao vivo ico.webp" sizes="32x32" type="image/png" />
@@ -18,6 +18,9 @@
     text-align: center;
 }
 .cabecalho{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
     background:rgba(128, 128, 128, 0.473) center  center no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -30,21 +33,22 @@
 }
 .voltar{
     height: 30px;
-    margin: 0% 0% 0% -85%;
+    margin: -7% 0% 0% -182%;
 }
 .bandeira{
     position: absolute;
-    margin: -67px 0% 0% 70%;
+    margin: -41px 0% 0% 90%;
     height: 80px;
     transition: 1s;
 }
 .bandeira:hover{
     position: absolute;
-    margin: -17px 0% 0% 70%;
     height: 80px;
+    margin: 0px 0% 0% 90%;
     transition: 1s;
 }
 .logo{
+    margin: 25px;
     position: relative;
     height: 340px;
 }
@@ -141,22 +145,20 @@ a{
     </style>
     <header>
     <div class="cabecalho">
-            <p><a href="https://infinitycooperative.github.io/Infinity/"><img src="imagens/voltar pt.webp" class="voltar"></a>
-            <img src="imagens/brasil pt.webp" alt="brasil" class="bandeira"></p>
+                    <ul class="menu">
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="#">Audios</a></li>
+                        <li><a href="#">Sons</a></li>
+                    </ul>
+                    <a href="https://infinitycooperative.github.io/Viva_ao_vivo/"><img src="imagens/voltar pt.webp" class="voltar"></a>
+                    <img src="imagens/brasil pt.webp" alt="brasil" class="bandeira">
             <img src="imagens/viva ao vivo icon.webp" alt="" class="logo">
+            
     </div>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        
         /* Container do menu */
         nav {
             background-color: #333;
-            width: 100%;
             position: fixed;
             top: 0;
             left: 0;
@@ -169,8 +171,9 @@ a{
             padding: 0;
             margin: 0;
             display: flex;
+            align-items: center;
             justify-content: center;
-            background-color: rgb(189 189 189);
+            background: rgb(176 188 185);
             transition: all 0.3s ease;
         }
         
@@ -179,6 +182,7 @@ a{
         }
         
         .menu a {
+            font-family: sans-serif;
             color: #fff;
             text-decoration: none;
             font-size: 18px;
@@ -196,7 +200,7 @@ a{
             left: 0;
             width: 0;
             height: 2px;
-            background-color: #fff;
+            background-color: white;
             transition: width 0.3s ease;
         }
         
@@ -211,17 +215,12 @@ a{
         
         /* Animação de deslizar para baixo */
         .menu li:hover {
-            background-color: rgb(189 189 189);
+            background-color: rgb(176 188 185);
         }
     </style>
-    <nav>
-        <ul class="menu">
-            <li><a href="#">Videos</a></li>
-            <li><a href="#">Audios</a></li>
-            <li><a href="#">Sons</a></li>
-        </ul>
-    </nav>
+    
     </header>
+
     <footer class="rodape">
            <form action="https://api.staticforms.xyz/submit" class="form" method="post">
                     <h3>Formulario de envio</h3>
